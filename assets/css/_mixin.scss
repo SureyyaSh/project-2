@@ -1,0 +1,13 @@
+
+@mixin responsive($max-width){
+    @media screen and (max-width:$max-width) {
+        @content;
+    }
+}
+
+@mixin ulHoverEffect{
+    transition: .3s ease;
+    opacity: 0;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+}

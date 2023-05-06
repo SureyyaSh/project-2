@@ -1,0 +1,981 @@
+html,
+body {
+  background-color: rgb(236, 238, 238);
+}
+
+header .headerTop {
+  padding: 15px;
+  background-color: black;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  header .headerTop {
+    display: none;
+  }
+}
+header .headerTop .left {
+  cursor: pointer;
+}
+header .headerTop .left a {
+  margin-right: 17px;
+  color: white;
+  font-size: 16px;
+  font-weight: 550;
+}
+header .headerTop .left i {
+  color: red;
+}
+header .headerTop .right .contact {
+  margin-right: 18px;
+}
+header .headerTop .right .contact a {
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+header .headerTop .right .contact a:hover {
+  color: red;
+  transition: 0.5s ease;
+}
+header .headerTop .right .social a {
+  color: white;
+  margin-right: 10px;
+}
+header .headerTop .right .social i {
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+header .headerTop .right .social i:hover {
+  color: red;
+  transition: 0.5s ease;
+}
+header .headerBottom {
+  padding: 30px 0;
+}
+header .headerBottom .logo img {
+  width: 200px;
+}
+@media screen and (max-width: 992px) {
+  header .headerBottom nav {
+    display: none;
+  }
+}
+header .headerBottom nav ul {
+  margin: 0;
+  z-index: 1;
+}
+header .headerBottom nav ul li {
+  margin-right: 20px;
+  position: relative;
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  header .headerBottom nav ul li a {
+    font-size: 16px !important;
+    align-items: center;
+  }
+}
+header .headerBottom nav ul li:hover ul {
+  transform: translateY(0);
+  opacity: 1;
+}
+header .headerBottom nav ul li a {
+  font-size: 17px;
+  color: black;
+  font-weight: bold;
+}
+header .headerBottom nav ul li a:hover {
+  color: red;
+  transition: 0.5s ease;
+}
+header .headerBottom nav ul li .one {
+  background-color: rgb(238, 235, 235);
+  position: absolute;
+  top: 80%;
+  width: 220px;
+  margin-top: 15px;
+  padding: 6px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  opacity: 0;
+  transform: rotateX(-75deg);
+  transform-origin: 0% 0%;
+}
+header .headerBottom nav ul li .one li {
+  padding: 2px 6px;
+  position: relative;
+  margin: 0;
+}
+header .headerBottom nav ul li .one li a {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+header .headerBottom .navRight .search {
+  margin-right: 15px;
+}
+header .headerBottom .navRight .search i {
+  font-size: 20px;
+}
+header .headerBottom .navRight .plus {
+  margin-right: 15px;
+}
+@media screen and (max-width: 992px) {
+  header .headerBottom .navRight .plus {
+    display: none;
+  }
+}
+header .headerBottom .navRight .plus i {
+  font-size: 20px;
+}
+header .headerBottom .navRight .button {
+  margin-right: 15px;
+}
+@media screen and (max-width: 1200px) {
+  header .headerBottom .navRight .button {
+    display: none;
+  }
+}
+header .headerBottom .navRight .button a {
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+header .headerBottom .navRight .button a:hover {
+  box-shadow: 0 0 19px 5px rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+header .headerBottom .navRight .signal i {
+  font-size: 20px;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: black;
+}
+footer .generalFooter {
+  margin-top: 60px;
+}
+footer .generalFooter .first {
+  color: #fff;
+}
+footer .generalFooter .first a img {
+  width: 250px;
+}
+footer .generalFooter .first p {
+  margin-top: 40px;
+}
+footer .generalFooter .first ul {
+  padding: 0;
+}
+footer .generalFooter .first ul li {
+  margin-top: 10px;
+  font-size: 16px;
+}
+footer .generalFooter .first ul li i {
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: red;
+  padding: 6px;
+  margin-right: 12px;
+}
+footer .generalFooter .second {
+  color: #fff;
+  padding-left: 30px;
+}
+footer .generalFooter .second h1 {
+  font-size: 22px;
+}
+footer .generalFooter .second ul {
+  padding: 0;
+  margin-top: 52px;
+}
+footer .generalFooter .second ul li {
+  margin-top: 17px;
+  transition: 0.3s ease;
+}
+footer .generalFooter .second ul li:hover {
+  transform: translateX(20px);
+  color: red;
+}
+footer .generalFooter .second ul li a {
+  color: #fff;
+}
+footer .generalFooter .second ul li a i {
+  color: red;
+}
+footer .generalFooter .fourth {
+  color: #fff;
+}
+footer .generalFooter .fourth h1 {
+  font-size: 22px;
+}
+footer .generalFooter .fourth p {
+  margin-top: 52px;
+  font-size: 17px;
+}
+footer .generalFooter .fourth input {
+  padding: 15px 30px;
+  border-radius: 12px;
+}
+footer .generalFooter .fourth button {
+  padding: 17px 70px;
+  font-size: 17px;
+  background-color: rgb(245, 24, 24);
+  color: #fff;
+  margin-top: 30px;
+  border-radius: 12px;
+  transition: 0.5s ease;
+  border: 1px solid black;
+}
+footer .generalFooter .fourth button:hover {
+  box-shadow: 0 0 19px 5px rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: red;
+  border: 1px solid white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+#one {
+  padding-top: 60px;
+  padding-bottom: 90px;
+  background-image: url(https://live.themewild.com/motex/assets/img/slider/slider-1.jpg);
+}
+#one .leftText .top {
+  margin-top: 60px;
+}
+#one .leftText .top h6 {
+  font-size: 24px;
+  letter-spacing: 5px;
+  color: red;
+  font-weight: bold;
+}
+#one .leftText .top h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+#one .leftText .top h1 span {
+  color: red;
+}
+@media screen and (max-width: 1200px) {
+  #one .leftText .top h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #one .leftText .top h1 {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #one .leftText .top h1 {
+    font-size: 50px;
+  }
+}
+#one .leftText .top p {
+  color: rgb(0, 0, 0);
+}
+@media screen and (max-width: 992px) {
+  #one .leftText .top p {
+    font-size: 16px;
+  }
+}
+#one .leftText .bottom {
+  margin-top: 50px;
+}
+#one .leftText .bottom a {
+  padding: 15px 20px;
+  background-color: red;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+#one .photo {
+  margin-top: 60px;
+}
+#two {
+  margin-top: -60px;
+  margin-bottom: 100px;
+}
+#two .formHeader {
+  border: 1px solid white;
+  background-color: rgb(245, 237, 237);
+  border-radius: 10px;
+  padding: 25px;
+}
+#two .formHeader .textHeader h4 {
+  font-size: 27px;
+  color: black;
+}
+#two .formHeader .forma {
+  margin-right: 16px;
+  cursor: pointer;
+}
+#two .formHeader .forma h1 {
+  font-size: 16px;
+}
+#two .formHeader .forma input {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(187, 179, 179);
+  cursor: pointer;
+}
+
+#three .textRightTwo {
+  margin-left: 40px;
+}
+#three .textRightTwo h6 {
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: red;
+  font-weight: bold;
+}
+#three .textRightTwo h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
+@media screen and (max-width: 7992px) {
+  #three .textRightTwo h1 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #three .textRightTwo h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 513px) {
+  #three .textRightTwo h1 {
+    font-size: 45px;
+  }
+}
+#three .textRightTwo h1 span {
+  color: red;
+}
+#three .textRightTwo p {
+  font-size: 15px;
+  color: grey;
+}
+#three .textRightTwo ul li a {
+  color: rgb(97, 95, 95);
+  font-size: 16px;
+  font-weight: bold;
+}
+#three .textRightTwo ul li a i {
+  border: 1px solid red;
+  color: red;
+  background-color: white;
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: bold;
+}
+#three .textRightTwo .buttonTwo {
+  margin-top: 60px;
+}
+#three .textRightTwo .buttonTwo a {
+  padding: 15px 20px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  margin-right: 15px;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+#three .textRightTwo .buttonTwo a:hover {
+  box-shadow: 0 0 19px 5px rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+#four {
+  margin-top: 100px;
+}
+#four .photoHead .textHeadFour {
+  text-align: center;
+}
+#four .photoHead .textHeadFour h4 {
+  font-size: 17px;
+  letter-spacing: 5px;
+  color: red;
+  font-weight: bold;
+}
+#four .photoHead .textHeadFour p {
+  font-size: 47px;
+  font-weight: bold;
+  color: black;
+}
+@media screen and (max-width: 1200px) {
+  #four .photoHead .textHeadFour p {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #four .photoHead .textHeadFour p {
+    font-size: 46px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #four .photoHead .textHeadFour p {
+    font-size: 46px;
+  }
+}
+#four .photoHead .textHeadFour p span {
+  color: red;
+}
+#four .photoHead .alls {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  #four .photoHead .alls {
+    width: 100%;
+  }
+}
+#four .photoHead .alls .carImg {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+#four .photoHead .alls .carImg span {
+  position: absolute;
+  background-color: red;
+  color: #fff;
+  border-radius: 7px;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 3px 6px;
+  z-index: 1;
+}
+#four .photoHead .alls .carImg img {
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.5s ease;
+}
+#four .photoHead .alls .carImg img:hover {
+  transform: scale(1.3);
+}
+#four .photoHead .alls .textsHead .toptext h4 {
+  font-size: 20px;
+}
+#four .photoHead .alls .textsHead .toptext .icon i {
+  color: rgb(233, 147, 18);
+  margin-right: 3px;
+}
+#four .photoHead .alls .textsHead .toptext .icon span {
+  font-size: 13px;
+}
+#four .photoHead .alls .textsHead ul li {
+  font-size: 15px;
+  margin-right: 10px;
+}
+#four .photoHead .alls .textsHead .footertext span {
+  font-size: 20px;
+  color: red;
+}
+#four .photoHead .alls .textsHead .footertext a {
+  padding: 8px 19px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  margin-right: 15px;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+#four .photoHead .alls .textsHead .footertext a:hover {
+  box-shadow: 0 0 19px 5px rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+#four .photoHead .foot {
+  text-align: center;
+  margin-top: 50px;
+}
+#four .photoHead .foot .son {
+  padding: 15px 24px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  margin-right: 15px;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+#four .photoHead .foot .son:hover {
+  box-shadow: 0 0 19px 5px rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+
+#five .my-container {
+  width: 90%;
+  margin: auto;
+}
+#five .general {
+  margin-top: 200px;
+}
+#five .general .textHeadFive {
+  text-align: center;
+}
+#five .general .textHeadFive h4 {
+  font-size: 17px;
+  letter-spacing: 5px;
+  color: red;
+  font-weight: bold;
+}
+#five .general .textHeadFive p {
+  font-size: 47px;
+  font-weight: bold;
+  color: black;
+}
+@media screen and (max-width: 1200px) {
+  #five .general .textHeadFive p {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #five .general .textHeadFive p {
+    font-size: 46px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #five .general .textHeadFive p {
+    font-size: 46px;
+  }
+}
+#five .general .textHeadFive p span {
+  color: red;
+}
+#five .general .phtFive {
+  padding: 20px;
+  background-color: rgb(254, 255, 255);
+  border-radius: 20px;
+  width: 80%;
+  margin-bottom: 25px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  #five .general .phtFive {
+    width: 90%;
+  }
+}
+#five .general .phtFive:hover {
+  transform: translateY(-10px);
+}
+#five .general .phtFive .textFive h5 {
+  text-align: center;
+  margin-top: -15px;
+}
+
+#six {
+  margin-top: 100px;
+}
+#six .sixHead .textSix {
+  text-align: center;
+}
+#six .sixHead .textSix h4 {
+  font-size: 17px;
+  letter-spacing: 5px;
+  color: red;
+  font-weight: bold;
+}
+#six .sixHead .textSix p {
+  font-size: 47px;
+  font-weight: bold;
+  color: black;
+}
+@media screen and (max-width: 1200px) {
+  #six .sixHead .textSix p {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #six .sixHead .textSix p {
+    font-size: 46px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #six .sixHead .textSix p {
+    font-size: 46px;
+  }
+}
+#six .sixHead .textSix p span {
+  color: red;
+}
+#six .sixHead .headerSix .allHead {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  transition: 0.5s ease;
+  cursor: auto;
+}
+#six .sixHead .headerSix .allHead:hover {
+  transform: translateY(-10px);
+}
+@media screen and (max-width: 768px) {
+  #six .sixHead .headerSix .allHead {
+    width: 100%;
+  }
+}
+#six .sixHead .headerSix .allHead .carImgSix span {
+  position: absolute;
+  background-color: red;
+  color: #fff;
+  border-radius: 7px;
+  margin-left: -17px;
+  margin-top: 5px;
+  padding: 3px 6px;
+  z-index: 1;
+}
+#six .sixHead .headerSix .allHead .carImgSix img {
+  background-color: #eed6d6;
+  border-radius: 10px;
+}
+#six .sixHead .headerSix .allHead .textsHeadSix h4 {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#six .sixHead .headerSix .allHead .textsHeadSix h4:hover {
+  color: red;
+}
+#six .sixHead .headerSix .allHead .textsHeadSix ul {
+  padding: 0;
+}
+#six .sixHead .headerSix .allHead .textsHeadSix ul li {
+  font-size: 15px;
+  color: gray;
+}
+#six .sixHead .headerSix .allHead .textsHeadSix ul li i {
+  color: red;
+}
+
+#seven {
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.904);
+}
+#seven .sevenLeft {
+  margin-right: 50px;
+  margin-top: 50px;
+}
+#seven .sevenLeft .sevenText h6 {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+#seven .sevenLeft .sevenText h1 {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  #seven .sevenLeft .sevenText h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #seven .sevenLeft .sevenText h1 {
+    font-size: 46px;
+  }
+}
+#seven .sevenLeft .sevenText h1 span {
+  color: red;
+}
+#seven .sevenLeft .sevenText p {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 18px;
+}
+#seven .sevenLeft .sevenPhoto img {
+  margin-top: 70px;
+}
+#seven .sevenRight {
+  margin-top: 50px;
+}
+#seven .sevenRight .BTN {
+  margin-top: 80px;
+}
+#seven .sevenRight .text1 .headTop {
+  padding: 20px;
+  background-color: #fff;
+  margin-right: 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1200px) {
+  #seven .sevenRight .text1 .headTop {
+    padding: 10px;
+  }
+}
+#seven .sevenRight .text1 .headTop .iconTop i {
+  font-size: 40px;
+  border: 1 px solid red;
+  border-radius: 50%;
+  background-color: red;
+  color: #fff;
+  padding: 22px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#seven .sevenRight .text1 .headTop .iconTop span {
+  font-size: 80px;
+  color: red;
+}
+#seven .sevenRight .text1 .textFoot {
+  margin-top: 20px;
+}
+#seven .sevenRight .text1 .textFoot h1 {
+  font-size: 25px;
+  color: black;
+}
+#seven .sevenRight .text1 .textFoot p {
+  font-size: 15px;
+  color: gray;
+}
+
+#eight {
+  margin-top: 200px;
+}
+#eight .generalEight .textHeadEight {
+  text-align: center;
+}
+#eight .generalEight .textHeadEight h4 {
+  font-size: 17px;
+  letter-spacing: 5px;
+  color: red;
+  font-weight: bold;
+}
+#eight .generalEight .textHeadEight p {
+  font-size: 47px;
+  font-weight: bold;
+  color: black;
+}
+@media screen and (max-width: 1200px) {
+  #eight .generalEight .textHeadEight p {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #eight .generalEight .textHeadEight p {
+    font-size: 46px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #eight .generalEight .textHeadEight p {
+    font-size: 46px;
+  }
+}
+#eight .generalEight .textHeadEight p span {
+  color: red;
+}
+#eight .generalEight .phtEight {
+  margin: 0 auto;
+  background-color: #dbdbdb;
+  border-radius: 10px;
+  width: 80%;
+  margin-bottom: 25px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  #eight .generalEight .phtEight {
+    width: 90%;
+  }
+}
+#eight .generalEight .phtEight:hover {
+  transform: translateY(-10px);
+}
+#eight .generalEight .phtEight .textEight h5 {
+  text-align: center;
+  color: black;
+}
+
+#nineteen {
+  margin-top: 60px;
+}
+#nineteen .generalNine .textHeadNine {
+  text-align: center;
+  position: relative;
+}
+#nineteen .generalNine .textHeadNine h4 {
+  font-size: 17px;
+  letter-spacing: 5px;
+  color: red;
+  font-weight: bold;
+}
+#nineteen .generalNine .textHeadNine p {
+  font-size: 47px;
+  font-weight: bold;
+  color: black;
+}
+@media screen and (max-width: 1200px) {
+  #nineteen .generalNine .textHeadNine p {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #nineteen .generalNine .textHeadNine p {
+    font-size: 46px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #nineteen .generalNine .textHeadNine p {
+    font-size: 46px;
+  }
+}
+#nineteen .generalNine .textHeadNine p span {
+  color: red;
+}
+#nineteen .generalNine .footerNine {
+  padding: 23px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  margin-top: 90px;
+  margin-right: 25px;
+}
+#nineteen .generalNine .footerNine img {
+  border-radius: 50%;
+  padding: 8px;
+  margin-top: -80px;
+  border-radius: 50%;
+  border: 5px solid red;
+}
+#nineteen .generalNine .footerNine h5 {
+  font-size: 22px;
+  margin-top: 13px;
+  color: black;
+}
+#nineteen .generalNine .footerNine span {
+  font-size: 16px;
+  color: red;
+  margin-top: 8px;
+  font-weight: 500;
+}
+#nineteen .generalNine .footerNine p {
+  font-size: 16px;
+  margin-top: 14px;
+}
+#nineteen .generalNine .footerNine .iconNineteen i {
+  color: rgb(190, 55, 5);
+}
+
+#ten {
+  margin-top: 70px;
+}
+#ten .tenHead .textHeadTen {
+  text-align: center;
+  position: relative;
+}
+#ten .tenHead .textHeadTen h4 {
+  font-size: 17px;
+  letter-spacing: 5px;
+  color: red;
+  font-weight: bold;
+}
+#ten .tenHead .textHeadTen p {
+  font-size: 47px;
+  font-weight: bold;
+  color: black;
+}
+@media screen and (max-width: 1200px) {
+  #ten .tenHead .textHeadTen p {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #ten .tenHead .textHeadTen p {
+    font-size: 46px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #ten .tenHead .textHeadTen p {
+    font-size: 46px;
+  }
+}
+#ten .tenHead .textHeadTen p span {
+  color: red;
+}
+#ten .tenHead .tenPhoto .generalTen {
+  padding: 23px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  margin-top: 90px;
+  margin-right: 25px;
+}
+#ten .tenHead .tenPhoto .generalTen .footerTen {
+  overflow: hidden;
+}
+#ten .tenHead .tenPhoto .generalTen .footerTen img {
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+#ten .tenHead .tenPhoto .generalTen .footerTen img:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+}
+#ten .tenHead .tenPhoto .generalTen .blog {
+  margin-top: 13px;
+}
+#ten .tenHead .tenPhoto .generalTen .blog h1 {
+  font-size: 16px;
+  color: black;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+#ten .tenHead .tenPhoto .generalTen .blog h1 i {
+  color: red;
+  margin-right: 5px;
+}
+#ten .tenHead .tenPhoto .generalTen .blog h1:hover {
+  color: red;
+}
+#ten .tenHead .tenPhoto .generalTen .textTen p {
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+#ten .tenHead .tenPhoto .generalTen .textTen a {
+  padding: 15px 22px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  margin-right: 15px;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+#ten .tenHead .tenPhoto .generalTen .textTen a:hover {
+  box-shadow: 0 0 19px 5px rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+}/*# sourceMappingURL=main.css.map */

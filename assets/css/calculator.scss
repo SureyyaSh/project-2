@@ -1,0 +1,102 @@
+@import './layout.scss';
+@import './mixin.scss';
+@import './resetting.scss';
+
+section {
+    .photoAbout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .background{
+        background-color: #000000be;
+        width: 100%;
+       }
+    .text {
+        padding: 200px 0 ;
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            color: #fff;
+        }
+
+        .lists {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                a {
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: bold;
+                    transition: .3s ease;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+
+                font-size: 18px;
+                color: rgb(0, 0, 0);
+                font-weight: 900;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+#calculator {
+    margin-top: 100px;
+
+    .calText {
+        background-color: #fff;
+        padding: 50px;
+        border-radius: 10px;
+        h2 {
+            font-size: 24px;
+            color: black;
+        }
+
+        .form {
+            .head {
+                input{
+                    padding: 14px 20px;
+                    border-radius: 10px;
+                    width: 100%;
+                    margin-bottom: 25px;
+                    border: 1px solid gray;
+                }
+            }
+            a{
+                font-size: 16px;
+                color: #fff;
+                padding: 12px 20px;
+                transition: .5s ease;
+                border-radius: 12px;
+                font-weight: 500;
+                background-color: red;
+                position: relative;
+                &:hover{
+                    background-color: black;
+                }
+            }
+        }
+        .imgCal{
+            img{
+                border-radius: 20px;
+                @include responsive(992px){
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

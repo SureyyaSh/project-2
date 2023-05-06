@@ -1,0 +1,891 @@
+@import './layout';
+@import './variables';
+@import './mixin';
+@import './resetting';
+
+#one {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    background-image: url(https://live.themewild.com/motex/assets/img/slider/slider-1.jpg);
+
+    .leftText {
+        .top {
+            margin-top: 60px;
+
+            h6 {
+                font-size: 24px;
+                letter-spacing: 5px;
+                color: red;
+                font-weight: bold;
+            }
+
+            h1 {
+                font-size: 60px;
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+
+                span {
+                    color: red;
+                }
+
+                @include responsive(1200px) {
+                    font-size: 40px;
+                }
+
+                @include responsive(992px) {
+                    font-size: 80px;
+                }
+
+                @include responsive(768px) {
+                    font-size: 50px;
+                }
+
+            }
+
+            p {
+                color: rgb(0, 0, 0);
+
+                @include responsive(992px) {
+                    font-size: 16px;
+
+                }
+            }
+        }
+
+        .bottom {
+            margin-top: 50px;
+
+            a {
+                padding: 15px 20px;
+                background-color: red;
+                color: rgb(255, 255, 255);
+                border-radius: 10px;
+                margin-right: 15px;
+                font-weight: bold;
+
+                i {}
+            }
+        }
+    }
+
+    .photo {
+        margin-top: 60px;
+
+        img {}
+    }
+}
+
+#two {
+    margin-top: -60px;
+    margin-bottom: 100px;
+
+    .formHeader {
+        border: 1px solid white;
+        background-color: rgb(245, 237, 237);
+        border-radius: 10px;
+        padding: 25px;
+
+        .textHeader {
+            h4 {
+                font-size: 27px;
+                color: black;
+            }
+        }
+
+        .forma {
+            margin-right: 16px;
+            cursor: pointer;
+
+            h1 {
+                font-size: 16px;
+            }
+
+            input {
+                padding: 10px 20px;
+                border-radius: 10px;
+                border: 1px solid rgb(187, 179, 179);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#three {
+    .photoTwo {
+        img {}
+    }
+
+    .textRightTwo {
+        margin-left: 40px;
+
+        h6 {
+            font-size: 20px;
+            letter-spacing: 5px;
+            color: red;
+            font-weight: bold;
+
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: black;
+
+            @include responsive(7992px) {
+                font-size: 45px;
+            }
+
+            @include responsive(768px) {
+                font-size: 48px;
+            }
+
+            @include responsive(513px) {
+                font-size: 45px;
+            }
+
+            span {
+                color: red;
+            }
+        }
+
+        p {
+            font-size: 15px;
+            color: grey;
+        }
+
+        ul {
+            li {
+                a {
+                    color: rgb(97, 95, 95);
+                    font-size: 16px;
+                    font-weight: bold;
+
+                    i {
+                        border: 1px solid red;
+                        color: red;
+                        background-color: white;
+                        padding: 2px;
+                        border-radius: 50%;
+                        font-size: 10px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .buttonTwo {
+            margin-top: 60px;
+
+            a {
+                padding: 15px 20px;
+                background-color: red;
+                color: white;
+                border-radius: 10px;
+                margin-right: 15px;
+                font-weight: bold;
+                transition: .5s ease;
+
+                &:hover {
+                    box-shadow: 0 0 19px 5px rgb(0, 0, 0);
+                    background-color: rgb(0, 0, 0);
+                }
+
+                i {}
+            }
+        }
+    }
+}
+
+#four {
+    margin-top: 100px;
+
+    .photoHead {
+        .textHeadFour {
+            text-align: center;
+
+            h4 {
+                font-size: 17px;
+                letter-spacing: 5px;
+                color: red;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 47px;
+                font-weight: bold;
+                color: black;
+
+                @include responsive(1200px) {
+                    font-size: 50px;
+                }
+
+                @include responsive(992px) {
+                    font-size: 46px;
+                }
+
+                @include responsive(768px) {
+                    font-size: 46px;
+                }
+
+                span {
+                    color: red;
+                }
+            }
+        }
+
+        .alls {
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            width: 90%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+
+            @include responsive(768px) {
+                width: 100%;
+            }
+
+            .carImg {
+                position: relative;
+                overflow: hidden;
+                border-radius: 15px;
+
+                span {
+                    position: absolute;
+                    background-color: red;
+                    color: #fff;
+                    border-radius: 7px;
+                    margin-left: 5px;
+                    margin-top: 5px;
+                    padding: 3px 6px;
+                    z-index: 1;
+                }
+
+                img {
+                    cursor: pointer;
+                    border-radius: 15px;
+                    transition: .5s ease;
+
+                    &:hover {
+                        transform: scale(1.3);
+                    }
+                }
+            }
+
+            .textsHead {
+                .toptext {
+                    h4 {
+                        font-size: 20px;
+                    }
+
+                    .icon {
+                        i {
+                            color: rgb(233, 147, 18);
+                            margin-right: 3px;
+                        }
+
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                ul {
+
+                    li {
+                        font-size: 15px;
+                        margin-right: 10px;
+                    }
+                }
+
+                .footertext {
+                    span {
+                        font-size: 20px;
+                        color: red;
+                    }
+
+                    a {
+                        padding: 8px 19px;
+                        background-color: red;
+                        color: white;
+                        border-radius: 10px;
+                        margin-right: 15px;
+                        font-weight: bold;
+                        transition: .5s ease;
+
+                        &:hover {
+                            box-shadow: 0 0 19px 5px rgb(0, 0, 0);
+                            background-color: rgb(0, 0, 0);
+                        }
+                    }
+                }
+            }
+        }
+
+        .foot {
+            text-align: center;
+            margin-top: 50px;
+
+            .son {
+                padding: 15px 24px;
+                background-color: red;
+                color: white;
+                border-radius: 10px;
+                margin-right: 15px;
+                font-weight: bold;
+                transition: .5s ease;
+
+                &:hover {
+                    box-shadow: 0 0 19px 5px rgb(0, 0, 0);
+                    background-color: rgb(0, 0, 0);
+                }
+            }
+        }
+    }
+}
+
+#five {
+    .my-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .general {
+        margin-top: 200px;
+
+        .textHeadFive {
+            text-align: center;
+
+            h4 {
+                font-size: 17px;
+                letter-spacing: 5px;
+                color: red;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 47px;
+                font-weight: bold;
+                color: black;
+
+                @include responsive(1200px) {
+                    font-size: 50px;
+                }
+
+                @include responsive(992px) {
+                    font-size: 46px;
+                }
+
+                @include responsive(768px) {
+                    font-size: 46px;
+                }
+
+                span {
+                    color: red;
+                }
+            }
+        }
+
+        .phtFive {
+            padding: 20px;
+            background-color: rgb(254, 255, 255);
+            border-radius: 20px;
+            width: 80%;
+            margin-bottom: 25px;
+            transition: .5s ease;
+            cursor: pointer;
+
+            @include responsive(768px) {
+                width: 90%;
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+
+            .img {
+                img {}
+            }
+
+            .textFive {
+                h5 {
+                    text-align: center;
+                    margin-top: -15px;
+                }
+            }
+        }
+    }
+}
+
+#six {
+    margin-top: 100px;
+
+    .sixHead {
+        .textSix {
+            text-align: center;
+
+            h4 {
+                font-size: 17px;
+                letter-spacing: 5px;
+                color: red;
+                font-weight: bold;
+
+            }
+
+            p {
+                font-size: 47px;
+                font-weight: bold;
+                color: black;
+
+                @include responsive(1200px) {
+                    font-size: 48px;
+                }
+
+                @include responsive(992px) {
+                    font-size: 46px;
+                }
+
+                @include responsive(768px) {
+                    font-size: 46px;
+                }
+
+                span {
+                    color: red;
+                }
+            }
+        }
+
+        .headerSix {
+            .allHead {
+                &:hover {
+                    transform: translateY(-10px);
+                }
+
+                padding: 10px;
+                background-color: rgb(255, 255, 255);
+                width: 90%;
+                border-radius: 15px;
+                margin-bottom: 30px;
+                transition: .5s ease;
+                cursor: auto;
+
+                @include responsive(768px) {
+                    width: 100%;
+                }
+
+                .carImgSix {
+                    span {
+                        position: absolute;
+                        background-color: red;
+                        color: #fff;
+                        border-radius: 7px;
+                        margin-left: -17px;
+                        margin-top: 5px;
+                        padding: 3px 6px;
+                        z-index: 1;
+                    }
+
+                    img {
+                        background-color: #eed6d6;
+                        border-radius: 10px;
+                    }
+                }
+
+                .textsHeadSix {
+                    h4 {
+                        font-size: 20px;
+                        color: black;
+                        font-weight: bold;
+                        margin-top: 10px;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: red;
+                        }
+                    }
+
+                    ul {
+                        padding: 0;
+
+                        li {
+                            font-size: 15px;
+                            color: gray;
+
+                            i {
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#seven {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.904);
+
+    .sevenLeft {
+        margin-right: 50px;
+        margin-top: 50px;
+
+        .sevenText {
+            h6 {
+                color: rgb(255, 255, 255);
+                font-size: 17px;
+                font-weight: bold;
+                letter-spacing: 3px;
+            }
+
+            h1 {
+                color: rgb(255, 255, 255);
+                font-size: 48px;
+                font-weight: bold;
+
+                @include responsive(768px) {
+                    font-size: 40px;
+                }
+
+                @include responsive(500px) {
+                    font-size: 46px;
+                }
+
+                span {
+                    color: red;
+                }
+            }
+
+            p {
+                color: white;
+                font-size: 15px;
+                font-weight: 500;
+                margin-top: 18px;
+            }
+        }
+
+        .sevenPhoto {
+
+            img {
+                margin-top: 70px;
+            }
+        }
+    }
+
+    .sevenRight {
+        margin-top: 50px;
+
+        .BTN {
+            margin-top: 80px;
+        }
+
+        .text1 {
+
+            .headTop {
+                padding: 20px;
+                background-color: #fff;
+                margin-right: 14px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+
+                @include responsive(1200px) {
+                    padding: 10px;
+                }
+
+                .iconTop {
+                    i {
+                        font-size: 40px;
+                        border: 1 px solid red;
+                        border-radius: 50%;
+                        background-color: red;
+                        color: #fff;
+                        padding: 22px;
+                        width: 80px;
+                        height: 80px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    span {
+                        font-size: 80px;
+                        color: red;
+                    }
+                }
+            }
+
+            .textFoot {
+                margin-top: 20px;
+
+                h1 {
+                    font-size: 25px;
+                    color: black;
+                }
+
+                p {
+                    font-size: 15px;
+                    color: gray;
+                }
+            }
+        }
+
+    }
+}
+
+
+#eight {
+    margin-top: 200px;
+
+    .generalEight {
+        .textHeadEight {
+            text-align: center;
+
+            h4 {
+                font-size: 17px;
+                letter-spacing: 5px;
+                color: red;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 47px;
+                font-weight: bold;
+                color: black;
+
+                @include responsive(1200px) {
+                    font-size: 50px;
+                }
+
+                @include responsive(992px) {
+                    font-size: 46px;
+                }
+
+                @include responsive(768px) {
+                    font-size: 46px;
+                }
+
+                span {
+                    color: red;
+                }
+            }
+        }
+
+        .phtEight {
+            margin: 0 auto;
+            background-color: #dbdbdb;
+            border-radius: 10px;
+            width: 80%;
+            margin-bottom: 25px;
+            transition: .5s ease;
+            cursor: pointer;
+            margin-top: 80px;
+
+            @include responsive(768px) {
+                width: 90%;
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+
+            .img {
+                img {}
+            }
+
+            .textEight {
+                h5 {
+                    text-align: center;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+#nineteen {
+    margin-top: 60px;
+
+    .generalNine {
+        .textHeadNine {
+            text-align: center;
+            position: relative;
+
+            h4 {
+                font-size: 17px;
+                letter-spacing: 5px;
+                color: red;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 47px;
+                font-weight: bold;
+                color: black;
+
+                @include responsive(1200px) {
+                    font-size: 50px;
+                }
+
+                @include responsive(992px) {
+                    font-size: 46px;
+                }
+
+                @include responsive(768px) {
+                    font-size: 46px;
+                }
+
+                span {
+                    color: red;
+                }
+            }
+        }
+
+        .footerNine {
+            padding: 23px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+            margin-top: 90px;
+            margin-right: 25px;
+
+            img {
+                border-radius: 50%;
+                padding: 8px;
+                margin-top: -80px;
+                border-radius: 50%;
+                border: 5px solid red;
+            }
+
+            h5 {
+                font-size: 22px;
+                margin-top: 13px;
+                color: black;
+            }
+
+            span {
+                font-size: 16px;
+                color: red;
+                margin-top: 8px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 16px;
+                margin-top: 14px;
+            }
+
+            .iconNineteen {
+                i {
+                    color: rgb(190, 55, 5);
+                }
+            }
+        }
+    }
+}
+
+#ten {
+    margin-top: 70px;
+
+    .tenHead {
+        .textHeadTen {
+            text-align: center;
+            position: relative;
+
+            h4 {
+                font-size: 17px;
+                letter-spacing: 5px;
+                color: red;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 47px;
+                font-weight: bold;
+                color: black;
+
+                @include responsive(1200px) {
+                    font-size: 50px;
+                }
+
+                @include responsive(992px) {
+                    font-size: 46px;
+                }
+
+                @include responsive(768px) {
+                    font-size: 46px;
+                }
+
+                span {
+                    color: red;
+                }
+            }
+        }
+
+        .tenPhoto {
+            .generalTen {
+                padding: 23px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 15px;
+                margin-top: 90px;
+                margin-right: 25px;
+
+                .footerTen {
+                    overflow: hidden;
+
+                    img {
+
+                        border-radius: 10px;
+                        transition: .5s ease;
+
+                        &:hover {
+                            transform: scale(1.2);
+                            overflow: hidden;
+                        }
+                    }
+                }
+
+                .blog {
+                    margin-top: 13px;
+
+                    h1 {
+                        font-size: 16px;
+                        color: black;
+                        transition: .3s ease;
+                        cursor: pointer;
+
+                        i {
+                            color: red;
+                            margin-right: 5px;
+                        }
+
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                }
+
+                .textTen {
+                    p {
+                        font-size: 25px;
+                        color: black;
+                        font-weight: 600;
+                        margin-bottom: 25px;
+                    }
+
+                    a {
+                        padding: 15px 22px;
+                        background-color: red;
+                        color: white;
+                        border-radius: 10px;
+                        margin-right: 15px;
+                        font-weight: bold;
+                        transition: .5s ease;
+
+                        &:hover {
+                            box-shadow: 0 0 19px 5px rgb(0, 0, 0);
+                            background-color: rgb(0, 0, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

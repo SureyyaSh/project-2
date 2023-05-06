@@ -1,0 +1,423 @@
+@import './layout.scss';
+@import './mixin.scss';
+@import './resetting.scss';
+
+section {
+    .photoAbout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .background{
+        background-color: #000000be;
+        width: 100%;
+       }
+    .text {
+        padding: 200px 0 ;
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            color: #fff;
+        }
+
+        .lists {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                a{
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: bold;
+                    transition: .3s ease;
+                    &:hover{
+                        color: red;
+                    }
+                }
+                font-size: 18px;
+                color: rgb(0, 0, 0);
+                font-weight: 900;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+#three {
+    margin-top: 70px;
+    .photoTwo {
+        img {}
+    }
+
+    .textRightTwo {
+        margin-left: 40px;
+
+        h6 {
+            font-size: 20px;
+            letter-spacing: 5px;
+            color: red;
+            font-weight: bold;
+
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: black;
+
+            @include responsive(7992px) {
+                font-size: 45px;
+            }
+
+            @include responsive(768px) {
+                font-size: 48px;
+            }
+
+            @include responsive(513px) {
+                font-size: 45px;
+            }
+
+            span {
+                color: red;
+            }
+        }
+
+        p {
+            font-size: 15px;
+            color: grey;
+        }
+
+        ul {
+            li {
+                a {
+                    color: rgb(97, 95, 95);
+                    font-size: 16px;
+                    font-weight: bold;
+
+                    i {
+                        border: 1px solid red;
+                        color: red;
+                        background-color: white;
+                        padding: 2px;
+                        border-radius: 50%;
+                        font-size: 10px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .buttonTwo {
+            margin-top: 60px;
+
+            a {
+                padding: 15px 20px;
+                background-color: red;
+                color: white;
+                border-radius: 10px;
+                margin-right: 15px;
+                font-weight: bold;
+                transition: .5s ease;
+
+                &:hover {
+                    box-shadow: 0 0 19px 5px rgb(0, 0, 0);
+                    background-color: rgb(0, 0, 0);
+                }
+
+                i {}
+            }
+        }
+    }
+}
+#nineteen {
+    margin-top: 60px;
+
+    .generalNine {
+        .textHeadNine {
+            text-align: center;
+            position: relative;
+
+            h4 {
+                font-size: 17px;
+                letter-spacing: 5px;
+                color: red;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 47px;
+                font-weight: bold;
+                color: black;
+
+                @include responsive(1200px) {
+                    font-size: 50px;
+                }
+
+                @include responsive(992px) {
+                    font-size: 46px;
+                }
+
+                @include responsive(768px) {
+                    font-size: 46px;
+                }
+
+                span {
+                    color: red;
+                }
+            }
+        }
+
+        .footerNine {
+            padding: 23px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+            margin-top: 90px;
+            margin-right: 25px;
+
+            img {
+                border-radius: 50%;
+                padding: 8px;
+                margin-top: -80px;
+                border-radius: 50%;
+                border: 5px solid red;
+            }
+
+            h5 {
+                font-size: 22px;
+                margin-top: 13px;
+                color: black;
+            }
+
+            span {
+                font-size: 16px;
+                color: red;
+                margin-top: 8px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 16px;
+                margin-top: 14px;
+            }
+
+            .iconNineteen {
+                i {
+                    color: rgb(190, 55, 5);
+                }
+            }
+        }
+    }
+}
+
+#ten {
+    margin-top: 70px;
+
+    .tenHead {
+        .textHeadTen {
+            text-align: center;
+            position: relative;
+
+            h4 {
+                font-size: 17px;
+                letter-spacing: 5px;
+                color: red;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 47px;
+                font-weight: bold;
+                color: black;
+
+                @include responsive(1200px) {
+                    font-size: 50px;
+                }
+
+                @include responsive(992px) {
+                    font-size: 46px;
+                }
+
+                @include responsive(768px) {
+                    font-size: 46px;
+                }
+
+                span {
+                    color: red;
+                }
+            }
+        }
+
+        .tenPhoto {
+            .generalTen {
+                padding: 23px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 15px;
+                margin-top: 90px;
+                margin-right: 25px;
+                transition: .3s ease;
+                position: relative;
+                &:hover {
+                    transform: translateY(-10px);
+                }
+                .footerTen {
+                    overflow: hidden;
+
+                    img {
+
+                        border-radius: 10px;
+                        transition: .5s ease;
+
+                        
+                    }
+                }
+                .icon{
+                    position: absolute;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    top: 60px;
+                    right: 15px;
+                    bottom: 0;
+                    opacity: 0;
+                    transition: .5s ease;
+                    &:hover{
+                    opacity: 1;
+                    }
+                    a{
+                        display: block;
+                        padding: 12px;
+                        color: #fff;
+                        width: 40px;
+                        height: 40px;
+                        margin-bottom: 10px;
+                        border-radius: 50%;
+                        background-color: red;
+                        &:hover{
+                            background-color: black;
+                            }
+                    }
+                }
+                .blog {
+                    margin-top: 13px;
+                    text-align: center;
+                    h1 {
+                        font-size: 16px;
+                        color: black;
+                        transition: .3s ease;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                    h2{
+                        font-size: 16px;
+                        color: red;
+                        transition: .3s ease;
+                        cursor: pointer;
+                    }
+                }
+
+                .textTen {
+                    p {
+                        font-size: 25px;
+                        color: black;
+                        font-weight: 600;
+                        margin-bottom: 25px;
+                    }
+
+                    a {
+                        padding: 15px 22px;
+                        background-color: red;
+                        color: white;
+                        border-radius: 10px;
+                        margin-right: 15px;
+                        font-weight: bold;
+                        transition: .5s ease;
+
+                        &:hover {
+                            box-shadow: 0 0 19px 5px rgb(0, 0, 0);
+                            background-color: rgb(0, 0, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#eight {
+    margin-top: 200px;
+
+    .generalEight {
+        .textHeadEight {
+            text-align: center;
+
+            h4 {
+                font-size: 17px;
+                letter-spacing: 5px;
+                color: red;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 47px;
+                font-weight: bold;
+                color: black;
+
+                @include responsive(1200px) {
+                    font-size: 50px;
+                }
+
+                @include responsive(992px) {
+                    font-size: 46px;
+                }
+
+                @include responsive(768px) {
+                    font-size: 46px;
+                }
+
+                span {
+                    color: red;
+                }
+            }
+        }
+
+        .phtEight {
+            margin: 0 auto;
+            background-color: #dbdbdb;
+            border-radius: 10px;
+            width: 80%;
+            margin-bottom: 25px;
+            transition: .5s ease;
+            cursor: pointer;
+            margin-top: 80px;
+
+            @include responsive(768px) {
+                width: 90%;
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+
+            .img {
+                img {}
+            }
+
+            .textEight {
+                h5 {
+                    text-align: center;
+                    color: black;
+                }
+            }
+        }
+    }
+}
